@@ -15,4 +15,15 @@
         echo "Não existe.";
     }
 
+    echo "<br>";
+    echo "<br>";
+
+    echo "<br>";
+
+
+    foreach($pessoa as $carac =>$value){
+
+        echo "$carac => $value <br>";
+
+    }
 ?>
