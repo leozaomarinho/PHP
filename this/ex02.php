@@ -3,22 +3,21 @@
     class Humano {
 
         public $olhos = 2;
-        public $braços = 2;
-        public $cabelo = false;
+        public $bracos = 2;
 
         public function falar(){
 
             echo "Olá mundo!<br>";
 
-        };
+        }
 
         private function CursoSuperior(){
-            echo "Mestrado concluido";
-        };
+            $curso  = "Mestrado concluido";
+        }
 
-        public function consultaCurso(){
-            echo CursoSuperior();
-        };
+        public function getCurso($curso){
+           return this->curso;
+        }
 
     };
 
@@ -27,12 +26,20 @@
 
         public function Ensinar(){
             echo "Repita comigo, vou aprender!<br>";
-        };
+        }
     }
 
     $leo = new Humano;
 
-    $leo->falar();
+    $luan = new Professor;
+
+    echo "$luan->bracos<br>";
+
+    $luan->falar();
+
+    
+
+    $luan->Ensinar();
 
 
 
