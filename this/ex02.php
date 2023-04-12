@@ -41,6 +41,10 @@
 
     $luan->Ensinar();
 
+    if($luan instanceof Humano){
+        echo " Luan é humano";
+    };
+
 
 
 ?>
