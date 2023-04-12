@@ -16,10 +16,16 @@ class Car {
 
     }
 
+    function exibeCarro(){
+        echo "Parabens ! Você comprou uma $this->marca de cor $this->cor modelo $this->modelo com $this->portas portas.";
+
+    }
+
 }
 
 $bmw = new Car("branca","bmw","z4",'2');
 
-echo "Você comprou uma $bmw->marca de cor $bmw->cor modelo $bmw->modelo com $bmw->portas portas.";
+$bmw->exibeCarro();
+
 
 ?>
